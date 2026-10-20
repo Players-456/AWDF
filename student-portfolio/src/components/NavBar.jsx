@@ -1,14 +1,15 @@
 import { Link, useLocation } from 'react-router-dom';
-import { Home, Zap, FolderGit2, Mail } from 'lucide-react';
+import { Home, Zap, FolderGit2, CheckSquare, Mail } from 'lucide-react';
 
 function NavBar() {
   const location = useLocation();
   
   const navLinks = [
-    { path: '/',         label: 'Home',     icon: <Home size={18} />      },
-    { path: '/skills',   label: 'Skills',   icon: <Zap size={18} />       },
-    { path: '/projects', label: 'Projects', icon: <FolderGit2 size={18} />},
-    { path: '/contact',  label: 'Contact',  icon: <Mail size={18} />      },
+    { path: '/',         label: 'Home',     icon: <Home size={18} />        },
+    { path: '/skills',   label: 'Skills',   icon: <Zap size={18} />         },
+    { path: '/projects', label: 'Projects', icon: <FolderGit2 size={18} />  },
+    { path: '/tasks',    label: 'Tasks',    icon: <CheckSquare size={18} /> },
+    { path: '/contact',  label: 'Contact',  icon: <Mail size={18} />        },
   ];
 
   return (
